@@ -8,3 +8,6 @@
 ## User Stories
 As a user I would like to;
 * Create an account
+* Create a login
+* Create a playlist
+* Upload a song to the playlist
