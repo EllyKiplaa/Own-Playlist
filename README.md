@@ -16,3 +16,4 @@ As a user I would like to;
 [Click here]()
 
 ## Technologies Used
+* Python3.6
