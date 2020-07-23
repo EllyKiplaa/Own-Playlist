@@ -8,3 +8,9 @@ class OwnPlaylistForm(FlaskForm):
     """
     name = StringField("Playlist Name", validators=[Required()])
     submit = SubmitField("Submit")
+    
+
+class UpdateProfile (FlaskForm):
+    bio = TestAreaField("Tell us about yourself", validators = [Required()])
+    submit = Submit ("Submit")
+    
