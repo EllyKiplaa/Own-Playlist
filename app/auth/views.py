@@ -6,9 +6,10 @@ from .forms import RegistrationForm, LoginForm
 from .. import db
 
 # registration route
-@auth.route('/reqister',methods=['GET','POST'])
+@auth.route('templates/auth/reqister',methods=['GET','POST'])
 def register():
     form =RegistrationForm()
+    print(form, 'maratah')
     if form.validate_on_submit():
         user =User(email=form.email.data,username=form.username.data,password=form.password.data)
         db.session.add(user)
@@ -35,7 +36,7 @@ def login():
 
         flash('invalid username or password')
 
-    title ="One Minute Pitch login"
+    title ="F.A.M.E playlist"
     return render_template('auth/login.html',login_form=login_form,title=title)
 
 #logout
