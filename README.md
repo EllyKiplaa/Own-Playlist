@@ -14,3 +14,5 @@ As a user I would like to;
 
 ## Deployed site
 [Click here]()
+
+## Technologies Used
