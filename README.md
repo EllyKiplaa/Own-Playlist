@@ -17,3 +17,4 @@ As a user I would like to;
 
 ## Technologies Used
 * Python3.6
+* Flask
