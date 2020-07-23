@@ -2,7 +2,7 @@ from flask_wtf import FlaskForm
 from  wtforms import StringField, TextAreaField, SubmitField
 from wtforms.validators import Required
 
-class OwnPlaylistForm(FlaskForm):
+class PlaylistForm(FlaskForm):
     """
     Class to create forms for creating playlists
     """
@@ -11,6 +11,6 @@ class OwnPlaylistForm(FlaskForm):
     
 
 class UpdateProfile (FlaskForm):
-    bio = TestAreaField("Tell us about yourself", validators = [Required()])
-    submit = Submit ("Submit")
+    bio = TextAreaField("Tell us about yourself", validators = [Required()])
+    submit = SubmitField ("Submit")
     
