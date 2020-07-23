@@ -19,3 +19,6 @@ As a user I would like to;
 * Python3.6
 * Flask
 * Bootstrap
+* Css
+* HTML
+* Javascript
