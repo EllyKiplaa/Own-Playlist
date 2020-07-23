@@ -7,7 +7,7 @@ class Config:
     
 
     SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://elly:Access2020@localhost/own_playlist"
-    # SECRET_KEY = os.environ.get('SECRET_KEY')
+    SECRET_KEY = os.environ.get('SECRET_KEY')
 
  
 class ProdConfig(Config):

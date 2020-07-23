@@ -25,6 +25,9 @@ class Group(UserMixin,db.Model):
     # name column for the group name
     name = db.Column(db.String)
 
+
+    email = db.Column(db.String, unique=True)
+
     # password_hash column for passwords
     password_hash = db.Column(db.String(255))
 
