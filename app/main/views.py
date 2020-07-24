@@ -4,6 +4,7 @@ from ..models import Playlist,Group,Song
 from .forms import PlaylistForm
 from flask_login import login_required,current_user
 from .. import db,audios
+from PIL import Image
 
 # Views
 @main.route('/')

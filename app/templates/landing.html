@@ -14,7 +14,7 @@
             <!-- Content -->
             <div class="text-center white-text mx-5 wow fadeIn">
               <h1 class="mb-4">
-                <strong>Music Notes<i class="fas fa-music"></i></strong>
+                <strong style = "font-family: 'Diplomata SC', cursive;">Music Notes<i class="fas fa-music"></i></strong>
                 <hr class="hr-light">
               </h1>            
               <p class="mb-4 d-none d-md-block">
@@ -22,14 +22,24 @@
                 </strong>
                 
               </p>
+              {% if current_user.is_authenticated %}
+              <a target="_blank" href="{{url_for('auth.login')}}" class="btn btn-outline-white btn-lg">New Playlist
+                <i class="fas fa-music ml-2"></i>
+              </a>
+              <a target="_blank" href="{{url_for('auth.login')}}" class="btn btn-outline-white btn-lg">Account
+                 <i class="fas fa-user"></i>
+              </a>
+              <a target="_blank" href="{{url_for('auth.login')}}" class="btn btn-outline-white btn-lg">Logout
+                 <i class="fas fa-sign-out-alt"></i>
+              </a>
+              {% else %}
               <a target="_blank" href="{{url_for('auth.login')}}" class="btn btn-outline-white btn-lg">Login
-                
-                <i class="fas fa-graduation-cap ml-2"></i>
+                <i class="fas fa-sign-in-alt"></i>
               </a>
               <a target="_blank" href="{{url_for('auth.register')}}" class="btn btn-outline-white btn-lg">Register
-                
-                <i class="fas fa-graduation-cap ml-2"></i>
+                <i class="fas fa-user"></i>
               </a>
+              {% endif %}
              
             </div>
            
