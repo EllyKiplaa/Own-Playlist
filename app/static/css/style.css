@@ -28,3 +28,11 @@ body,
 /* Footer color for sake of consistency with Navbar */
 .page-footer {
   background-color: #1C2331; }
+  .fame{
+    background-color: #7b4397,#dc2430;
+    height: 900px;
+    background-image: linear-gradient(to right, rgb(130, 221, 168) , rgb(174, 39, 201)); /* Standard syntax (must be last) */
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/11/19/48/music-3311599__340.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

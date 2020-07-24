@@ -9,6 +9,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Timmana&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
@@ -17,7 +18,7 @@
   {% extends 'bootstrap/base.html' %}
 <!-- Styles block -->
 {% block styles%} {{ super() }}
-<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %} {% block body%}
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}"> {% endblock %} {% block body%}
 
 <!-- Scripts block -->
 {% block scripts %}
@@ -25,8 +26,8 @@
 {{super()}}
 {% endblock %}
 
-
-<div id="position1" class="col-md-2"  >
+<div class="fame">
+<div id="position1" class="col-md-2">
   <ul>
     <h1><a  id="heading" href="/">F.A.M.E</a></h1>
     <ul>
@@ -50,6 +51,7 @@
   <!-- content block -->
   {% block content %} {% endblock %}
 
+</div>
 </div>
 <section class="my-5 wow fadeIn" data-wow-delay="0.3s" >
 {% endblock %}
