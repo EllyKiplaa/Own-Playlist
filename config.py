@@ -9,7 +9,8 @@ class Config:
     SQLALCHEMY_DATABASE_URI = "postgresql+psycopg2://elly:Access2020@localhost/own_playlist"
     SECRET_KEY = os.environ.get('SECRET_KEY')
 
- 
+
+    UPLOADED_AUDIOS_DEST = 'app/static/audios'
 class ProdConfig(Config):
     '''
     Production  configuration child class
