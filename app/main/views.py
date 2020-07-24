@@ -3,7 +3,7 @@ from . import main
 from ..models import Playlist,Group,Song
 from .forms import PlaylistForm
 from flask_login import login_required,current_user
-from .. import db
+from .. import db,audios
 
 # Views
 @main.route('/')
@@ -176,3 +176,8 @@ def delete_playlist(id):
     playlist.delete_playlist(id)
 
     return redirect(url_for('.group', id=current_user.id))
+
+
+
+   
+
